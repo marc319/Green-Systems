@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Systems</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" hred="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+
+
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src= "Images/Green Systems-logos.jpeg" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Account</a></li>
+                </ul>
+            </nav>
+            <img src="Images/shopping cart.png" width="30px" height="30px">
+            <img src="Images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>Shopping Made Easier</h1>
+                <p>Finding fresh produce is now easier and quicker than ever</p>
+                <a href="" class="btn">Explore &#8594;</a>
+            </div>
+            <div class="col-2">
+                <img src="Images/bacground1.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------categories-------->
+
+<div class="categories">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <img src="Images/fruits category.jfif" >
+            </div>
+            <div class="col-3">
+                <img src="Images/vegetables category.jfif">
+            </div>
+            <div class="col-3">
+                <img src="Images/livestock category.jfif">
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<!--------products-------->
+
+<div class="small-container">
+    <h2 class="title">Featured Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="Images/apples.jfif">
+            <h4>Apples</h4>
+            <p>$5.00</p>
+        </div>
+        <div class="col-4">
+            <img src="Images/carrots.jfif">
+            <h4>Carrots</h4>
+            <p>$10.00</p>
+        </div>
+        <div class="col-4">
+            <img src="Images/Cucumber.jfif">
+            <h4>Cucumbers</h4>
+            <p>$10.00</p>
+        </div>
+        <div class="col-4">
+            <img src="Images/chicken.jfif">
+            <h4>Chicken</h4>
+            <p>$100.00</p>
+        </div>
+    </div>
+</div>
+
+<!-----sellers----->
+<div class="seller">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-5">
+                <img src="Images/seller.png">
+                <h5>Seller 1</h5>
+            </div>
+            <div class="col-5">
+                <img src="Images/seller.png">
+                <h5>Seller 2</h5>
+            </div>
+            <div class="col-5">
+                <img src="Images/seller.png">
+                <h5>Seller 3</h5>
+            </div>
+            <div class="col-5">
+                <img src="Images/seller.png">
+                <h5>Seller 4</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----footer---->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download App</h3>
+                <p>Download our App for Android and iOS Devices</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----toggle menu---->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px"){
+            MenuItems.style.maxHeight = "2000px"
+        }
+        else{
+            MenuItems.style.maxHeight = "0px"
+        }
+    }
+</script>
+
+</body>
+</html>
