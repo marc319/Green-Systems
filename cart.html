@@ -36,57 +36,77 @@
 </div>
 
 
-<!--------products-------->
-<div class="small-container">
+<!-----cart details----->
 
-    <div class="row row-2">
-        <h2>All Products</h2>
-        <select>
-            <option>Default</option>
-            <option>Sort by Price</option>
-            <option>Popularity</option>
-        </select>
+<div class="small-container cart-page">
+    
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="Images/apples.jfif">
+                </div>
+                <div>
+                    <p>Apples</p>
+                    <small>Price: $5.00</small>
+                    <br>
+                    <a href="">Remove</a>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$5.00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="Images/carrots.jfif">
+                </div>
+                <div>
+                    <p>Carrots</p>
+                    <small>Price: $10.00</small>
+                    <br>
+                    <a href="">Remove</a>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$10.00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="Images/chicken.jfif">
+                </div>
+                <div>
+                    <p>Chicken</p>
+                    <small>Price: $100.00</small>
+                    <br>
+                    <a href="">Remove</a>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$100.00</td>
+        </tr>
+
+    </table>
+
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>$115.00</td>
+            </tr>
+        </table>
     </div>
 
-    <div class="row">
-        <div class="col-4">
-            <a href="product-details.html"><img src="Images/apples.jfif"></a>
-            <a href="product-details.html"><h4>Apples</h4></a>
-            <p>$5.00</p>
-        </div>
-        <div class="col-4">
-            <img src="Images/carrots.jfif">
-            <h4>Carrots</h4>
-            <p>$10.00</p>
-        </div>
-        <div class="col-4">
-            <img src="Images/Cucumber.jfif">
-            <h4>Cucumbers</h4>
-            <p>$10.00</p>
-        </div>
-        <div class="col-4">
-            <img src="Images/chicken.jfif">
-            <h4>Chicken</h4>
-            <p>$100.00</p>
-        </div>
-        <div class="col-4">
-            <img src="Images/banana.jfif">
-            <h4>Banana</h4>
-            <p>$15.00</p>
-        </div>
-        <div class="col-4">
-            <img src="Images/lettuce.jfif">
-            <h4>Lettuce</h4>
-            <p>$12.00</p>
-        </div>
-    </div>
-    <div class="page-btn">
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>&#8594</span>
-    </div>
+
+
 </div>
+
 
 
 

@@ -28,7 +28,7 @@
                     <li><a href="account.html">Account</a></li>
                 </ul>
             </nav>
-            <a href="cart.html"><img src="Images/shopping cart.png" width="30px" height="30px"></a>
+            <img src="Images/shopping cart.png" width="30px" height="30px">
             <img src="Images/menu.png" class="menu-icon" onclick="menutoggle()">
         </div>
 
@@ -36,55 +36,37 @@
 </div>
 
 
-<!--------products-------->
-<div class="small-container">
+<!------account----->
 
-    <div class="row row-2">
-        <h2>All Products</h2>
-        <select>
-            <option>Default</option>
-            <option>Sort by Price</option>
-            <option>Popularity</option>
-        </select>
-    </div>
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="Images/bacground1.jpg" width="100%">
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="Signup()">Sign up</span>
+                        <hr id="Indicator">
+                    </div>
+                    <form id="LoginForm">
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Login</button>
+                        <a href="">Forgot Password?</a>
+                    </form>
 
-    <div class="row">
-        <div class="col-4">
-            <a href="product-details.html"><img src="Images/apples.jfif"></a>
-            <a href="product-details.html"><h4>Apples</h4></a>
-            <p>$5.00</p>
+                    <form id="RegistrationForm">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Sign up</button>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div class="col-4">
-            <img src="Images/carrots.jfif">
-            <h4>Carrots</h4>
-            <p>$10.00</p>
-        </div>
-        <div class="col-4">
-            <img src="Images/Cucumber.jfif">
-            <h4>Cucumbers</h4>
-            <p>$10.00</p>
-        </div>
-        <div class="col-4">
-            <img src="Images/chicken.jfif">
-            <h4>Chicken</h4>
-            <p>$100.00</p>
-        </div>
-        <div class="col-4">
-            <img src="Images/banana.jfif">
-            <h4>Banana</h4>
-            <p>$15.00</p>
-        </div>
-        <div class="col-4">
-            <img src="Images/lettuce.jfif">
-            <h4>Lettuce</h4>
-            <p>$12.00</p>
-        </div>
-    </div>
-    <div class="page-btn">
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>&#8594</span>
     </div>
 </div>
 
@@ -117,6 +99,30 @@
         }
     }
 </script>
+
+
+<!-----toggle form----->
+<script>
+    var LoginForm = document.getElementById("LoginForm");
+    var LoginForm = document.getElementById("RegistrationForm");
+    var Indicator = document.getElementById("Indicator");
+
+    function Signup(){
+
+        RegistrationForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(100px)";
+    }
+
+    function login(){
+
+        RegistrationForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)";
+    }
+
+</script>
+
 
 </body>
 </html>
